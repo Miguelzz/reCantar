@@ -182,20 +182,20 @@ $(document).ready(function () {
         , "La vida es inherentemente arriesgada Solo hay un riesgo mayor que deberías evitar, y es el riesgo de no hacer nada."
     ];
     var num = Math.floor(Math.random() * twettear.length);
-    $('.d').css({
-        'width': '70px'
-        , 'height': '70px'
-    });
     $('.d').animate({
         'width': '200px'
         , 'height': '200px'
-    }, 60000);
+    }, 900000);
     window.setTimeout(function () {
         $('embed').remove();
         $('body').append('<embed src="Css/trino.wav" autostart="true" hidden="true" loop="false">');
         window.setTimeout(function () {
             window.open('http://www.twitter.com/share?text=' + twettear[num]);
+            $('.d').css({
+                'width': '70px'
+                , 'height': '70px'
+            });
             window.location.reload(true);
         }, 3000);
-    }, 60000);
+    }, 900000);
 })
