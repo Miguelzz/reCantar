@@ -183,19 +183,20 @@ $(document).ready(function () {
     ];
     var num = Math.floor(Math.random() * twettear.length);
     $('.d').animate({
-        'width': '200px'
-        , 'height': '200px'
+        'width': '0px'
+        , 'height': '0px'
     }, 900000);
     window.setTimeout(function () {
         $('embed').remove();
         $('body').append('<embed src="Css/trino.wav" autostart="true" hidden="true" loop="false">');
         window.setTimeout(function () {
-            window.open('http://www.twitter.com/share?text=' + twettear[num]);
-            $('.d').css({
-                'width': '70px'
-                , 'height': '70px'
-            });
             window.location.reload(true);
         }, 3000);
     }, 900000);
+    $('#Twitear').click(function () {
+        var tweet = $('#texto').val();
+        $('#texto').val('');
+        window.open('http://www.twitter.com/share?text=' + tweet);
+    })
+    window.open('http://www.twitter.com/share?text=' + twettear[num]);
 })

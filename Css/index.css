@@ -3,6 +3,25 @@
     padding: 0px;
 }
 
+#Twitear {
+    background: #1164ea;
+    padding: 5px 20px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+}
+
+#Twitear:hover {
+    background: #17aec9;
+}
+
+#texto {
+    margin-top: 20px;
+    width: 400px;
+    height: 100px;
+    font-size: 18px;
+}
+
 .conten {
     width: 100%;
     height: 100vh;
@@ -25,8 +44,8 @@
 
 .d {
     background: #1164ea;
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
