@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 #Twitear {
@@ -8,7 +9,7 @@
     padding: 5px 20px;
     margin-top: 10px;
     border: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.69);
 }
 
 #Twitear:hover {
@@ -16,6 +17,10 @@
 }
 
 #texto {
+    color: white;
+    padding: 12px;
+    background: rgb(18, 21, 25);
+    border: 1px solid #ff00b1;
     margin-top: 20px;
     width: 400px;
     height: 100px;

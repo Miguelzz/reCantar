@@ -182,9 +182,10 @@ $(document).ready(function () {
         , "La vida es inherentemente arriesgada Solo hay un riesgo mayor que deberías evitar, y es el riesgo de no hacer nada."
     ];
     var num = Math.floor(Math.random() * twettear.length);
+    $('.d').addClass('animated pulse infinite')
     $('.d').animate({
-        'width': '0px'
-        , 'height': '0px'
+        'width': '70px'
+        , 'height': '70px'
     }, 900000);
     window.setTimeout(function () {
         $('embed').remove();
